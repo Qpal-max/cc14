@@ -14,9 +14,7 @@ export default function Hero() {
         </div>
       </div>
       <div style={styles.heroImage}>
-        {/* Replace this div with your photo */}
-        <div style={styles.imgPlaceholder}>📷 Your Photo</div>
-        {/* <img src="/your-photo.jpg" alt={DATA.name} style={styles.img} /> */}
+        {<img src="src/josh.png" alt={DATA.name} style={styles.img} />}
       </div>
     </section>
   );

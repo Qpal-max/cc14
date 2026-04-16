@@ -1,44 +1,44 @@
 const DATA = {
-  name: "Your Name",
-  role: "Front-End Developer & Designer",
-  tagline: "Blending thoughtful UI design with clean, responsive development to create websites that look great and perform flawlessly.",
+  name: "Joshua Keane I. Almora",
+  role: "Front-End-Back Developer & Designer",
+  tagline: "Blending thoughtful UI design with clean, responsive development to create websites that look great and perform flawlessly. fr.",
   linkedin: "https://linkedin.com",
   github: "https://github.com",
   cvLink: "/cv.pdf",
 
   about:
-    "I'm a front-end developer and designer passionate about crafting clean, intuitive, and responsive digital experiences.",
+    "I'm a front-end-Back developer and designer passionate about crafting clean, intuitive, and responsive digital experiences.",
   approach: [
     "Understand users & goals",
     "Create clean UI layouts",
     "Responsive experiences",
   ],
   stats: [
-    { value: "02+", label: "Years of Experience" },
-    { value: "15+", label: "Projects Completed" },
-    { value: "05+", label: "Clients Served" },
+    { value: "00.2+", label: "Years of Experience" },
+    { value: "15+", label: "Projects (Unfinished)" },
+    { value: "05+", label: "Clients Served (in Court)" },
   ],
 
   experience: [
     {
-      title: "Junior Web Developer",
-      company: "Company Name",
-      period: "Jan 2024 – Present",
-      description: "Describe your responsibilities and achievements here.",
+      title: "Assitant Web Developer",
+      company: "My Company  ",
+      period: "Jan 2040 – Present",
+      description: "I was a Assistant for a Experienced Developer",
     },
     {
       title: "Web Dev Intern",
-      company: "Another Company",
-      period: "Jun 2023 – Dec 2023",
-      description: "Describe your responsibilities and achievements here.",
+      company: "My other Company",
+      period: "Jun 2020 – Dec 2021",
+      description: "Did a Internship, basta internship.",
     },
   ],
 
   education: [
     {
-      degree: "BS Computer Science",
-      school: "Your University Name",
-      period: "2020 – 2024",
+      degree: "BS Information Technology",
+      school: "University of The Cordillera",
+      period: "2024 – 2027",
       details: "Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems.",
     },
   ],
@@ -46,15 +46,15 @@ const DATA = {
   skillGroups: [
     { title: "Core Skills", tags: ["UI/UX layout", "Frontend Dev", "Responsive Web Design", "Component-Based Design"] },
     { title: "Frontend Tech", tags: ["HTML", "CSS", "JS", "WordPress"] },
-    { title: "Design Tools", tags: ["Figma", "Photoshop", "Illustrator"] },
+    { title: "Design Tools", tags: ["Figma", "Photoshop", "Illustrator", "Davinci", "Canva", "CapCut"] },
     { title: "Tools & Interaction", tags: ["GitHub", "Netlify", "GSAP", "UI Interactions"] },
   ],
 
   contact: [
-    { label: "Email", value: "you@email.com" },
+    { label: "Email", value: "almorajoshua8@email.com" },
     { label: "Phone", value: "+63 912 345 6789" },
-    { label: "GitHub", value: "github.com/yourname" },
-    { label: "LinkedIn", value: "linkedin.com/in/yourname" },
+    { label: "GitHub", value: "github.com/Qpal" },
+    { label: "LinkedIn", value: "linkedin.com/in/JoshKeane" },
   ],
 };
 
