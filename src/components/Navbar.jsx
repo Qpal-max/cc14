@@ -3,7 +3,7 @@ const navLinks = ["Home", "About", "Experience", "Education", "Skills", "Contact
 export default function Navbar() {
   return (
     <nav style={styles.nav}>
-      <div style={styles.logo}>yn</div>
+      <div style={styles.logo}>JKA</div>
       <div style={styles.navLinks}>
         {navLinks.map((link) => (
           <a key={link} href={`#${link.toLowerCase()}`} style={styles.navLink}>
@@ -11,7 +11,7 @@ export default function Navbar() {
           </a>
         ))}
       </div>
-      <a href="mailto:you@email.com" style={styles.talkBtn}>Let's Talk</a>
+      <a href="Mahal ka ba?" style={styles.talkBtn}>Let's Talk</a>
     </nav>
   );
 }
