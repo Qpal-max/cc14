@@ -7,7 +7,7 @@ export default function Hero() {
         <p style={styles.heroSub}>I am {DATA.name}</p>
         <h1 style={styles.heroTitle}>{DATA.role}</h1>
         <p style={styles.heroTagline}>{DATA.tagline}</p>
-        <a href={DATA.cvLink} style={styles.cvBtn}>Download CV</a>
+        <a href={DATA.cvLink} style={styles.cvBtn}>Download my CV</a>
         <div style={styles.socialRow}>
           <a href={DATA.linkedin} style={styles.socialIcon} target="_blank" rel="noreferrer">in</a>
           <a href={DATA.github} style={styles.socialIcon} target="_blank" rel="noreferrer">gh</a>
