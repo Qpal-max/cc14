@@ -9,8 +9,8 @@ const AboutMe = () => {
           JD
         </div>
         <div>
-          <h3 className="text-xl font-semibold">Juan Dela Cruz</h3>
-          <p className="text-gray-500">Full Stack Developer</p>
+          <h3 className="text-xl font-semibold">Joshua Keane I. Almora</h3>
+          <p className="text-gray-500">Prolly A Developer</p>
           <p className="mt-2 text-gray-700">
             I build clean, user-friendly web applications. Passionate about solving
             real-world problems through code and always eager to learn new technologies.
