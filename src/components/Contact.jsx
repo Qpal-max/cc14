@@ -2,10 +2,10 @@ import React from 'react';
 
 const Contact = () => {
   const contacts = [
-    { label: "Email", value: "you@email.com" },
+    { label: "Email", value: "almorajoshua8@email.com" },
     { label: "Phone", value: "+63 912 345 6789" },
-    { label: "GitHub", value: "github.com/yourname" },
-    { label: "LinkedIn", value: "linkedin.com/in/yourname" },
+    { label: "GitHub", value: "github.com/Qpal" },
+    { label: "LinkedIn", value: "linkedin.com/in/JoshuaAlmora" },
   ];
 
   return (
