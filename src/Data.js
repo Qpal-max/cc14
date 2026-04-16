@@ -1,7 +1,7 @@
 const DATA = {
   name: "Joshua Keane I. Almora",
-  role: "Front-End-Back Developer & Designer",
-  tagline: "Blending thoughtful UI design with clean, responsive development to create websites that look great and perform flawlessly. fr.",
+  role: "Front-End-Back Developer & Vibe Coder",
+  tagline: "Blending thoughtful UI design with clean, responsive development to create websites that look great and perform flawlessly. fr!",
   linkedin: "https://linkedin.com",
   github: "https://github.com",
   cvLink: "/cv.pdf",

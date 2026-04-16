@@ -1,25 +1,42 @@
-const navLinks = ["Home", "About", "Experience", "Education", "Skills", "Contact"];
+const navLinks = [
+  { label: "Home",       id: "home" },
+  { label: "About",      id: "about" },
+  { label: "Experience", id: "experience" },
+  { label: "Education",  id: "education" },
+  { label: "Skills",     id: "skills" },
+  { label: "Contact",    id: "contact" },
+];
 
-export default function Navbar() {
+export default function Navbar({ active, setActive }) {
   return (
-    <nav style={styles.nav}>
-      <div style={styles.logo}>JKA</div>
-      <div style={styles.navLinks}>
-        {navLinks.map((link) => (
-          <a key={link} href={`#${link.toLowerCase()}`} style={styles.navLink}>
-            {link}
-          </a>
+    <nav style={s.nav}>
+      <div style={s.logo}>yn</div>
+      <div style={s.links}>
+        {navLinks.map((l) => (
+          <button
+            key={l.id}
+            onClick={() => setActive(l.id)}
+            style={{
+              ...s.link,
+              color: active === l.id ? "#fff" : "#777",
+              borderBottom: active === l.id ? "2px solid #fff" : "2px solid transparent",
+            }}
+          >
+            {l.label}
+          </button>
         ))}
       </div>
-      <a href="Mahal ka ba?" style={styles.talkBtn}>Let's Talk</a>
+      <button style={s.talkBtn} onClick={() => setActive("contact")}>
+        Let's Talk
+      </button>
     </nav>
   );
 }
 
-const styles = {
+const s = {
   nav: {
     display: "flex", alignItems: "center", justifyContent: "space-between",
-    padding: "1rem 4rem", borderBottom: "1px solid #222",
+    padding: "1rem 4rem", borderBottom: "1px solid #1a1a1a",
     position: "sticky", top: 0, background: "#0a0a0a", zIndex: 100,
   },
   logo: {
@@ -27,11 +44,13 @@ const styles = {
     color: "#000", display: "flex", alignItems: "center",
     justifyContent: "center", fontWeight: 700, fontSize: 14,
   },
-  navLinks: { display: "flex", gap: "2rem" },
-  navLink: { color: "#ccc", textDecoration: "none", fontSize: 15 },
+  links: { display: "flex", gap: "2rem" },
+  link: {
+    background: "none", border: "none", cursor: "pointer",
+    fontSize: 14, paddingBottom: 4, transition: "color .2s, border-color .2s",
+  },
   talkBtn: {
-    background: "transparent", border: "1px solid #555",
-    color: "#fff", padding: "8px 20px", borderRadius: 6,
-    textDecoration: "none", fontSize: 14,
+    background: "transparent", border: "1px solid #444", color: "#fff",
+    padding: "8px 20px", borderRadius: 6, fontSize: 14, cursor: "pointer",
   },
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';  // Make sure this imports the Tailwind styles
 
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 
