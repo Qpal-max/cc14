@@ -1,18 +1,30 @@
-import React from 'react';
+import DATA from "../Data";
 
-const Education = () => {
+export default function Education() {
   return (
-    <section className="mb-10">
-      <h2 className="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4">Education</h2>
-      <div className="bg-white rounded-lg shadow p-4">
-        <h3 className="text-lg font-semibold">BS Information Technology</h3>
-        <p className="text-gray-500 text-sm">Univercity of the Cordilleras</p>
-        <p className="mt-2 text-gray-700">
-          Relevant coursework: Networking, Web Development, Database Systems.
-        </p>
+    <section id="education" style={styles.section}>
+      <h2 style={styles.title}>Education</h2>
+      <p style={styles.sub}>My academic background</p>
+      <div style={styles.list}>
+        {DATA.education.map((e) => (
+          <div key={e.degree} style={styles.card}>
+            <h3 style={styles.cardTitle}>{e.degree}</h3>
+            <p style={styles.meta}>{e.school} · {e.period}</p>
+            <p style={styles.desc}>{e.details}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
-};
+}
 
-export default Education;
+const styles = {
+  section: { padding: "5rem 4rem", borderTop: "1px solid #1a1a1a", textAlign: "center" },
+  title: { fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 700, color: "#fff", marginBottom: "0.75rem" },
+  sub: { color: "#666", fontSize: 14, marginBottom: "3rem" },
+  list: { display: "flex", flexDirection: "column", gap: "1.25rem", textAlign: "left" },
+  card: { background: "#111", border: "1px solid #222", borderRadius: 12, padding: "1.5rem" },
+  cardTitle: { color: "#fff", fontWeight: 600, fontSize: 17, marginBottom: "0.4rem" },
+  meta: { color: "#555", fontSize: 13, marginBottom: "0.75rem" },
+  desc: { color: "#777", fontSize: 14, lineHeight: 1.7 },
+};

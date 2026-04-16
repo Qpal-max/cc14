@@ -1,6 +1,9 @@
 import React from 'react';
 import './index.css';  // Make sure this imports the Tailwind styles
 
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+
 import AboutMe from './components/AboutMe';
 import Education from './components/Education';
 import Experience from './components/Experience';
@@ -9,18 +12,14 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="bg-gray-50 text-gray-900 font-sans">
-      <header className="text-center py-8 bg-blue-500 text-white">
-        <h1 className="text-4xl font-bold">My Portfolio</h1>
-        <p className="mt-2 text-blue-100">Full Stack Developer · Open to Opportunities</p>
-      </header>
-      <main className="max-w-6xl mx-auto p-6">
-        <AboutMe />
-        <Education />
-        <Experience />
-        <Skills />
-        <Contact />
-      </main>
+    <div style={{ background: "#0a0a0a", minHeight: "100vh", fontFamily: "sans-serif" }}>
+      <Navbar />
+      <Hero />
+      <AboutMe />
+      <Experience />
+      <Education />
+      <Skills />
+      <Contact />
     </div>
   );
 }
